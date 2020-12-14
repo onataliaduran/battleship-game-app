@@ -1,0 +1,37 @@
+<header class="header">
+    <h1>Start Playing!</h1>
+    <p>Fire torpedoes by clicking any cell and try to sink the enemy's ships!</p>
+</header>
+
+<div class="oneTwoThree"> 
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+</div>
+<div class="container">
+    <div class="abc"> 
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>
+        <div>J</div>
+    </div>
+    <div class="grid">
+        <div *ngFor="let cell of currentBoard; let i=index" (click)="boom(cell)" class="item" [ngClass]="{incorrect: cell.incorrect === true, correct: cell.correct === true}">
+        </div>
+    </div>
+</div>
+
+

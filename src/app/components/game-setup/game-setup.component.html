@@ -1,0 +1,25 @@
+<header class="header">
+    <h1>Game setup</h1>
+    <p>Choose the Difficulty</p>
+</header>
+
+<form [formGroup]="gameSetupForm" (ngSubmit)="submitForm()" class="form">
+    <div>
+        <input type="radio" id="easy" value="easy" formControlName="difficultyOption">
+        <label for="easy">Easy</label>
+    </div>
+
+    <div>
+        <input type="radio" id="medium" value="medium" formControlName="difficultyOption">
+        <label for="medium">Medium</label>
+    </div>
+
+    <div>
+        <input type="radio" id="hard" value="hard" formControlName="difficultyOption">
+        <label for="hard">Hard</label>
+    </div>
+
+    <button class="formBtn" type="submit">Let's go!</button>
+</form>
+
+

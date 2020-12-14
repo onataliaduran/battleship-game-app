@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #00171F;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color:  transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color:  #00cfeb;
+        border-radius: 5px;
+    }
+}
+

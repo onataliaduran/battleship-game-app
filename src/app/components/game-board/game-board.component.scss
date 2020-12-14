@@ -1,0 +1,46 @@
+.header {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.container {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oneTwoThree {
+    margin-left: 1.7rem;
+    display: flex;
+    justify-content: center;
+    div {
+        display: flex;
+        justify-content: center;
+        padding: .5rem 1.2rem;
+    }
+}
+
+.abc {
+    div {
+        padding: .8rem;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 3rem);
+    grid-template-rows: repeat(10, 3rem);
+}
+
+.item {
+    border: 1px solid #FAFAFA;
+}
+
+.incorrect {
+    background-color: gray;
+}
+
+.correct {
+    background-color: red;
+}

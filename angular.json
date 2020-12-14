@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "casi-listo"
+  "defaultProject": "casi-listo",
+  "cli": {
+    "analytics": false
+  }
 }
